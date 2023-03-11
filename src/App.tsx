@@ -1,8 +1,15 @@
-import type { Component } from 'solid-js';
+import type { Component } from "solid-js";
+import HeroHeader from "./components/HeroHeader";
+import UserCards from "./components/UserCards";
 
 const App: Component = () => {
   return (
-    <p class="text-4xl text-green-700 text-center py-20">Hello tailwind!</p>
+    <>
+      <HeroHeader />
+      <div class="max-w-xl mx-auto my-16">
+        <UserCards />
+      </div>
+    </>
   );
 };
 
