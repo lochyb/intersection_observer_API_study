@@ -5,23 +5,24 @@ const HeroHeader: Component = () => {
     <div class="relative overflow-hidden bg-gradient-to-tl from-neutral-400 to-teal-100">
       <div class="pt-10 pb-20 mx-auto sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:py-32 lg:px-8">
         <div class="max-w-2xl px-4 mx-auto">
-          <div class="flex flex-wrap items-end justify-center min-h-16 gap-4 sm:justify-start">
+          <div class="flex flex-wrap items-center min-h-16 gap-4">
             <img
-              class="h-16"
-              src="https://robohash.org/Intersection-Observer-API-Study"
+              class="h-16 bg-teal-50 rounded-full"
+              src="https://robohash.org/lochy"
               alt="profile"
             />
-            <button class="inline-flex items-center cursor-not-allowed space-x-6">
+            <a
+              href="https://lochyb.github.io/profile/"
+              class="inline-flex items-center space-x-6"
+            >
               <span class="px-3 py-1 text-sm font-semibold text-teal-600 rounded-full leading-6 bg-teal-600/10 ring-1 ring-inset ring-teal-600/10">
                 L Bernard
               </span>
-              <span class="inline-flex items-center text-sm font-medium text-gray-600 space-x-2 leading-6">
-                <span>Created 2023-03-11</span>
-                <span class="w-5 h-5 text-gray-400" aria-hidden="true">
-                  →
-                </span>
-              </span>
-            </button>
+            </a>
+            <span class="flex flex-col text-sm font-medium text-gray-600 leading-6">
+              <span>Created 2023-03-11</span>
+              <span>Last Updated: 2023-04-09</span>
+            </span>
           </div>
           <h1 class="mt-10 text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl">
             Intersection Observation API
@@ -33,14 +34,13 @@ const HeroHeader: Component = () => {
             - Create simple website with SolidJS
           </h4>
           <h4 class="mt-2 font-normal tracking-tight text-md text-slate-900 sm:text-lg">
-            - Initialize javascript logic only when items are displayed on
-            screen.
+            - Initialize component when component is intersected.
           </h4>
           <h4 class="mt-2 font-normal tracking-tight text-md text-slate-900 sm:text-lg">
             - Set background color based on pictures color
           </h4>
           <p class="mt-6 text-sm text-gray-600 leading-8">
-            Note: UI designs from{" "}
+            Note: UI designs inspired from{" "}
             <a
               class="text-revert"
               href="https://tailwindui.com/"
@@ -50,11 +50,14 @@ const HeroHeader: Component = () => {
             </a>
           </p>
           <div class="flex items-center mt-10 gap-x-6">
-            <button class="cursor-not-allowed rounded-md bg-teal-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
-              Documentation
-            </button>
+            <a
+              href="#fetch-users"
+              class="no-underline rounded-md bg-teal-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
+            >
+              Examples
+            </a>
             <button class="text-sm font-semibold text-gray-900 cursor-not-allowed leading-6">
-              View on GitHub <span aria-hidden="true">→</span>
+              View Repository on GitHub <span aria-hidden="true">→</span>
             </button>
           </div>
         </div>

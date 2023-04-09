@@ -1,14 +1,15 @@
 import type { Component } from "solid-js";
+import FetchUsersExample from "./components/Examples/FetchUsersExample";
 import HeroHeader from "./components/HeroHeader";
-import UserCards from "./components/UserCards";
+import Section from "./components/Section";
 
 const App: Component = () => {
   return (
     <>
       <HeroHeader />
-      <div class="max-w-xl mx-auto my-16">
-        <UserCards />
-      </div>
+      <Section title="Fetch Users" id="fetch-users">
+        <FetchUsersExample />
+      </Section>
     </>
   );
 };

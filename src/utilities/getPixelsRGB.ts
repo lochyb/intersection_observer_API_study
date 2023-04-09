@@ -12,6 +12,5 @@ export function getPixelsRGB(imageElement) {
   let pixels = context.getImageData(2, 1, 1, 1).data;
 
   const rgb = `rgba(${pixels[0]},${pixels[1]},${pixels[2]},0.5)`;
-  console.log(rgb);
   return rgb;
 }

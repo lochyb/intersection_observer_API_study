@@ -4,6 +4,8 @@
 
 html {
   background-color: #d6d6d6;
+  scroll-behavior: smooth;
+  scroll-padding-top: 48px;
 }
 
 body {
@@ -21,4 +23,18 @@ body {
 
 a {
   all: revert;
+}
+
+ol,
+ul {
+  list-style: revert;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0 0 0 1em;
+  white-space: nowrap;
+}
+
+li {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
